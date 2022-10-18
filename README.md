@@ -24,11 +24,19 @@ See [Conventional Commits](https://www.conventionalcommits.org/) for sample titl
 
 **Required** Conventional changelog preset. Default `"conventional-changelog-angular"`.
 
+### `target-url`
+
+**Optional** URL to be used when linking the "Details" in the actions overview. Default `"https://github.com/aslafy-z/conventional-pr-title-action"`.
+
 ## Outputs
 
 ### `success`
 
 `true` if the validation succeed. `false` otherwise.
+
+### `error`
+
+In case of an error (`success=false`), contains the error message for additional processing or usage in notifications.
 
 ## Example usage
 
@@ -46,7 +54,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: aslafy-z/conventional-pr-title-action@master
+      - uses: aslafy-z/conventional-pr-title-action@v2
         with:
           success-state: Title follows the specification.
           failure-state: Title does not follow the specification.
@@ -56,7 +64,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-> Note: Avoid using `master` ref, prefer to pin the last release's SHA ref.
+> Note: Avoid using `main` ref, prefer to pin the last release's SHA ref.
 
 ## Credits
 

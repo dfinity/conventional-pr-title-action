@@ -9,10 +9,11 @@ async function run() {
     let contextName = core.getInput('context-name');
     let successState = core.getInput('success-state');
     let failureState = core.getInput('failure-state');
+    let targetUrl = core.getInput('target-url') || 'https://github.com/aslafy-z/conventional-pr-title-action';
     const installPresetPackage = core.getInput('preset');
     const requirePresetPackage = npa(installPresetPackage).name;
 
-    const client = new github.GitHub(process.env.GITHUB_TOKEN);
+    const client = new github.getOctokit(process.env.GITHUB_TOKEN);
 
     const contextPullRequest = github.context.payload.pull_request;
     if (!contextPullRequest) {
@@ -49,7 +50,7 @@ async function run() {
         state,
         description,
         sha: contextPullRequest.head.sha,
-        target_url: 'https://github.com/aslafy-z/conventional-pr-title-action',
+        target_url: targetUrl,
         context: contextName,
       },
     );
@@ -61,6 +62,7 @@ async function run() {
     }
 
   } catch (error) {
+    core.setOutput('error', error.message);
     core.setFailed(error.message);
   }
 };
