@@ -1,8 +1,9 @@
-const core = require('@actions/core');
-const github = require('@actions/github');
-const npa = require('npm-package-arg');
-const installPreset = require('./installPreset');
-const validateTitle = require('./validateTitle');
+import * as core from '@actions/core';
+import * as github from '@actions/github';
+import npa from 'npm-package-arg';
+import installPreset from './installPreset';
+import validateTitle from './validateTitle';
+
 
 async function run() {
   try {
