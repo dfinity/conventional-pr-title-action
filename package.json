@@ -10,18 +10,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com//dfinity/conventional-pr-title-action.git"
+    "url": "git+https://github.com/dfinity/conventional-pr-title-action.git"
   },
   "keywords": [
     "github-action",
     "conventional-commits"
   ],
-  "author": "Dfinity SDK Team <sdk@dfinity.org>",
+  "author": "DFINITY SDK Team <sdk@dfinity.org>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com//dfinity/conventional-pr-title-action/issues"
+    "url": "https://github.com/dfinity/conventional-pr-title-action/issues"
   },
-  "homepage": "https://github.com//dfinity/conventional-pr-title-action#readme",
+  "homepage": "https://github.com/dfinity/conventional-pr-title-action#readme",
   "dependencies": {
     "@actions/core": "^1.10.0",
     "@actions/github": "^5.1.1",
