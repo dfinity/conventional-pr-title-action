@@ -1,5 +1,5 @@
 name: Conventional PR Title
-author: Zadkiel <hello@zadkiel.fr>
+author: DFINITY SDK Team <sdk@dfinity.org>
 description: Ensure your PR title matches the Conventional Commits spec (https://www.conventionalcommits.org/).
 inputs:
   success-state:
