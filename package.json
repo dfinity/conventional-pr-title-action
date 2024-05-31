@@ -5,6 +5,9 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
+    "bundle": "npm run format:write && npm run package",
+    "format:write": "npx prettier --write .",
+    "package": "npx ncc build src/index.js -o dist --source-map --license licenses.txt",
     "test": "vitest",
     "release": "semantic-release"
   },
@@ -34,6 +37,8 @@
     "node": ">= 22"
   },
   "devDependencies": {
+    "@vercel/ncc": "^0.38.1",
+    "prettier": "^3.2.5",
     "vitest": "^1.6.0"
   }
 }

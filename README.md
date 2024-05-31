@@ -1,5 +1,7 @@
 ## Important Notice: This repository has been archived
 
+test pr
+
 Please note that no further updates or developments are planned for this repository in the future. The implementation and functionality constraints associated with the `conventional-changelog` packages and the limitations in the data extraction process have led to this decision. For those seeking a maintained and active alternative with mostly similar functionalities, it is recommended to switch to [`amannn/action-semantic-pull-request`](https://github.com/amannn/action-semantic-pull-request).
 
 Thank you for your support and understanding.
@@ -17,21 +19,25 @@ See [Conventional Commits](https://www.conventionalcommits.org/) for sample titl
 ### `success-state`
 
 **Optional.** Description of the status check if validation succeeds.
+
 > Default: `"Title follows the specification."`.
 
 ### `failure-state`
 
 **Optional.** Description of the status check if validation fails.
+
 > Default: `"Title does not follow the specification."`.
 
 ### `context-name`
 
-**Optional.** Persistent status check context key. 
+**Optional.** Persistent status check context key.
+
 > Default: `"conventional-pr-title"`.
 
 ### `target-url`
 
 **Optional.** URL to be used when linking the "Details" in the actions overview.
+
 > Default: `"https://www.conventionalcommits.org/en/v1.0.0/#summary"`.
 
 ## Outputs
