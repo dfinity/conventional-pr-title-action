@@ -29,11 +29,6 @@ See [Conventional Commits](https://www.conventionalcommits.org/) for sample titl
 **Optional.** Persistent status check context key. 
 > Default: `"conventional-pr-title"`.
 
-### `preset`
-
-**Optional.** Conventional changelog preset.
-> Default: `"conventional-changelog-conventionalcommits@5.0.0"`.
-
 ### `target-url`
 
 **Optional.** URL to be used when linking the "Details" in the actions overview.

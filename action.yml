@@ -14,10 +14,6 @@ inputs:
     description: Persistent status check context key
     required: false
     default: conventional-pr-title
-  preset:
-    description: Conventional changelog preset to use.
-    required: false
-    default: conventional-changelog-conventionalcommits@7
 runs:
   using: docker
   image: Dockerfile
