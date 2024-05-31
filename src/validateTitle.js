@@ -1,5 +1,5 @@
-import { sync as parser } from 'conventional-commits-parser';
-import conventionalCommitTypes from 'conventional-commit-types';
+import { sync as parser } from "conventional-commits-parser";
+import conventionalCommitTypes from "conventional-commit-types";
 import * as conventionalChangelogConfig from "conventional-changelog-conventionalcommits";
 
 function isFunction(functionToCheck) {
@@ -23,8 +23,8 @@ export default async function validateTitle(title) {
     throw new Error(
       `No release type found in pull request title "${title}". The title should match the commit message format as specified by https://www.conventionalcommits.org/. ` +
         `\n\nPlease use one of these recognized types: ${allowedTypes.join(
-          ", "
-        )}.`
+          ", ",
+        )}.`,
     );
   }
 
@@ -32,8 +32,8 @@ export default async function validateTitle(title) {
     throw new Error(
       `Unknown release type "${result.type}" found in pull request title "${title}".` +
         `\n\nPlease use one of these recognized types: ${allowedTypes.join(
-          ", "
-        )}.`
+          ", ",
+        )}.`,
     );
   }
 }

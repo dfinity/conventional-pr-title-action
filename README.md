@@ -19,21 +19,25 @@ See [Conventional Commits](https://www.conventionalcommits.org/) for sample titl
 ### `success-state`
 
 **Optional.** Description of the status check if validation succeeds.
+
 > Default: `"Title follows the specification."`.
 
 ### `failure-state`
 
 **Optional.** Description of the status check if validation fails.
+
 > Default: `"Title does not follow the specification."`.
 
 ### `context-name`
 
-**Optional.** Persistent status check context key. 
+**Optional.** Persistent status check context key.
+
 > Default: `"conventional-pr-title"`.
 
 ### `target-url`
 
 **Optional.** URL to be used when linking the "Details" in the actions overview.
+
 > Default: `"https://www.conventionalcommits.org/en/v1.0.0/#summary"`.
 
 ## Outputs

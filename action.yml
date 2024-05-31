@@ -15,8 +15,9 @@ inputs:
     required: false
     default: conventional-pr-title
 runs:
-  using: docker
-  image: Dockerfile
+  using: node20
+  main: dist/index.js
+
 branding:
   icon: shield
   color: green
